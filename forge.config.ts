@@ -6,6 +6,7 @@ import { MakerRpm } from '@electron-forge/maker-rpm';
 import { VitePlugin } from '@electron-forge/plugin-vite';
 import { FusesPlugin } from '@electron-forge/plugin-fuses';
 import { FuseV1Options, FuseVersion } from '@electron/fuses';
+require('dotenv').config();
 
 const config: ForgeConfig = {
   packagerConfig: {
@@ -57,8 +58,10 @@ const config: ForgeConfig = {
           owner: 'joaomfandre99',
           name: 'post-its'
         },
+        draft: true,
         prerelease: false,
-        draft: true
+        generateReleaseNotes: true,
+        authToken: process.env.GITHUB_TOKEN
       }
     }
   ]

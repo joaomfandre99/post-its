@@ -16,6 +16,10 @@
     "name": "joaomfandre99",
     "email": "joaomfandre99@gmail.pt"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joaomfandre99/post-its"
+  },
   "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^7.8.0",
